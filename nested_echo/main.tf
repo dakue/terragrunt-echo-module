@@ -7,12 +7,6 @@ terraform {
   backend "s3" {}
 }
 
-resource "null_resource" "inventories" {
-  provisioner "local-exec" {
-    command = "echo  ${var.echo_string}"
-  }
-}
-
 module "nested_echo" {
   source = "git@github.com:itsmethemojo/terragrunt-echo-module.git//echo"
 
