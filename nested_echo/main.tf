@@ -12,3 +12,10 @@ resource "null_resource" "inventories" {
     command = "echo  ${var.echo_string}"
   }
 }
+
+module "nested_echo" {
+  source = "git@github.com:itsmethemojo/terragrunt-echo-module.git//echo"
+
+  aws_region  = "${var.aws_region}"
+  echo_string = "${var.echo_string}"
+}
