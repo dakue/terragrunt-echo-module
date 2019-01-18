@@ -5,3 +5,7 @@ variable "aws_region" {
 variable "echo_string" {
   description = "the string to output"
 }
+
+variable "cidr_block" {
+  description = "cidr_block"
+}
