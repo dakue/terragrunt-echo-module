@@ -10,6 +10,6 @@ variable "AWS_PROFILE" {
   description = "Name of the aws profile e.g. azaws"
 }
 
-variable "cidr_block" {
-  description = "cidr_block"
+variable "cidr_block_start" {
+  description = "cidr_block_start"
 }
